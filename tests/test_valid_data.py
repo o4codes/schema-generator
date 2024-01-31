@@ -7,6 +7,7 @@ from . import utils
 
 
 class TestValidData(unittest.TestCase):
+    
     def test_simple_data(self):
         input_data = {"message": {"name": "name", "count": 2}}
         expected_result = {

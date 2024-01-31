@@ -32,3 +32,11 @@ Run the following to execute
 ```python
 python main.py
 ```
+
+### Tests
+
+Run the following command to run tests
+
+```python
+python -m unittest
+```
