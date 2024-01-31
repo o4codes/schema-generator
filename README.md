@@ -2,10 +2,10 @@
 
 ## Schema Generator
 
-This is the submission forr the data2bot python engineer assessment. A schema generator is developed to parse a given json file to a schema description of the content.
+This is the submission for the data2bot python engineer assessment. A schema generator is developed to parse a given json file to a schema description of the content.
 Sample datasets are present in the **data** directory, and the equivalent parsed schema is present in the **schema** directory.
-The program responsible for the generation of schema file is present in the **executors** directory. It contains the Schema Data Types supported and a SchemaGenerator class which performs the parsing of data to schema.
-The generated schema contains the data type of the attributes of the data and also go ahead to compute for where data is nested in an array or object. Therefore a summary structure of the schema is ass followss:
+The program responsible for the generation of schema file is present in the **schema_generator** directory. It contains the Schema Data Types supported and a SchemaGenerator class which performs the parsing of data to schema.
+The generated schema contains the data type of the attributes of the data and also go ahead to compute for where data is nested in an array or object. Therefore a summary structure of the schema is as followss:
 
 ```json
     {
