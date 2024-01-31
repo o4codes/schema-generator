@@ -10,13 +10,14 @@ class SchemaGenerator:
         self.input_file_path = input_file_path
         self.output_file_path = output_file_path
         self._schema = {}
-        self._input_data = self._read_input_file()
+        self._input_data = None
     
     def generate(self):
         """
-        Generates a scheme description of the input data.
+        Generates a schema description of the input data.
         Write schema description to output file
         """
+        self._read_input_file()
         self._validate_input_data()
         self._generate_schema()
         self._write_schema_to_output_file()
@@ -30,7 +31,7 @@ class SchemaGenerator:
         """
         try:
             with open(self.input_file_path, "r") as f:
-                return json.load(f)
+                self._input_data = json.load(f)
         except FileNotFoundError as exc:
             raise Exception("Input File not found") from exc
         except json.JSONDecodeError as exc:
@@ -54,7 +55,6 @@ class SchemaGenerator:
         """
         Parses the input data and generates a schema description
         """
-        
         self._schema = self._parse_schema(self._input_data["message"])
     
     def _parse_schema(self, data: dict):
