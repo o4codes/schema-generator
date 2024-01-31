@@ -2,12 +2,12 @@ from enum import Enum
 
 
 class SchemaDataType(Enum):
-    STRING = "string"
-    INTEGER = "integer"
-    ENUM = "enum"
-    ARRAY = "array"
-    OBJECT = "object"
-    BOOLEAN = "boolean"
+    STRING = "STRING"
+    INTEGER = "INTEGER"
+    ENUM = "ENUM"
+    ARRAY = "ARRAY"
+    OBJECT = "OBJECT"
+    BOOLEAN = "BOOLEAN"
 
 TYPE_MAPPING = {
     str: SchemaDataType.STRING,

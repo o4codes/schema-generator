@@ -11,9 +11,9 @@ class TestValidData(unittest.TestCase):
     def test_simple_data(self):
         input_data = {"message": {"name": "name", "count": 2}}
         expected_result = {
-            "name": {"type": "string", "tag": "", "description": "", "required": False},
+            "name": {"type": "STRING", "tag": "", "description": "", "required": False},
             "count": {
-                "type": "integer",
+                "type": "INTEGER",
                 "tag": "",
                 "description": "",
                 "required": False,
@@ -30,20 +30,20 @@ class TestValidData(unittest.TestCase):
         input_data = {"message": {"items": [{"name": "name", "count": 2}]}}
         expected_result = {
             "items": {
-                "type": "array",
+                "type": "ARRAY",
                 "tag": "",
                 "description": "",
                 "required": False,
                 "attrs": [
                     {
                         "name": {
-                            "type": "string",
+                            "type": "STRING",
                             "tag": "",
                             "description": "",
                             "required": False,
                         },
                         "count": {
-                            "type": "integer",
+                            "type": "INTEGER",
                             "tag": "",
                             "description": "",
                             "required": False,
@@ -63,19 +63,19 @@ class TestValidData(unittest.TestCase):
         input_data = {"message": {"items": {"name": "name", "count": 2}}}
         expected_result = {
             "items": {
-                "type": "object",
+                "type": "OBJECT",
                 "tag": "",
                 "description": "",
                 "required": False,
                 "attrs": {
                     "name": {
-                        "type": "string",
+                        "type": "STRING",
                         "tag": "",
                         "description": "",
                         "required": False,
                     },
                     "count": {
-                        "type": "integer",
+                        "type": "INTEGER",
                         "tag": "",
                         "description": "",
                         "required": False,

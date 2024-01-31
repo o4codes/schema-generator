@@ -1,84 +1,84 @@
 {
     "battle": {
-        "type": "object",
+        "type": "OBJECT",
         "tag": "",
         "description": "",
         "required": false,
         "attrs": {
             "id": {
-                "type": "string",
+                "type": "STRING",
                 "tag": "",
                 "description": "",
                 "required": false
             },
             "name": {
-                "type": "string",
+                "type": "STRING",
                 "tag": "",
                 "description": "",
                 "required": false
             },
             "orientation": {
-                "type": "string",
+                "type": "STRING",
                 "tag": "",
                 "description": "",
                 "required": false
             },
             "settings": {
-                "type": "object",
+                "type": "OBJECT",
                 "tag": "",
                 "description": "",
                 "required": false,
                 "attrs": {
                     "minParticipants": {
-                        "type": "integer",
+                        "type": "INTEGER",
                         "tag": "",
                         "description": "",
                         "required": false
                     },
                     "maxParticipants": {
-                        "type": "integer",
+                        "type": "INTEGER",
                         "tag": "",
                         "description": "",
                         "required": false
                     },
                     "battleType": {
-                        "type": "string",
+                        "type": "STRING",
                         "tag": "",
                         "description": "",
                         "required": false
                     },
                     "wagerType": {
-                        "type": "string",
+                        "type": "STRING",
                         "tag": "",
                         "description": "",
                         "required": false
                     },
                     "countdown": {
-                        "type": "integer",
+                        "type": "INTEGER",
                         "tag": "",
                         "description": "",
                         "required": false
                     },
                     "duration": {
-                        "type": "integer",
+                        "type": "INTEGER",
                         "tag": "",
                         "description": "",
                         "required": false
                     },
                     "archetype": {
-                        "type": "object",
+                        "type": "OBJECT",
                         "tag": "",
                         "description": "",
                         "required": false,
                         "attrs": {
                             "name": {
-                                "type": "string",
+                                "type": "STRING",
                                 "tag": "",
                                 "description": "",
                                 "required": false
                             },
                             "iconId": {
-                                "type": "string",
+                                "type": "STRING",
                                 "tag": "",
                                 "description": "",
                                 "required": false
@@ -88,67 +88,67 @@
                 }
             },
             "status": {
-                "type": "string",
+                "type": "STRING",
                 "tag": "",
                 "description": "",
                 "required": false
             },
             "creationTime": {
-                "type": "integer",
+                "type": "INTEGER",
                 "tag": "",
                 "description": "",
                 "required": false
             },
             "startTime": {
-                "type": "integer",
+                "type": "INTEGER",
                 "tag": "",
                 "description": "",
                 "required": false
             },
             "endTime": {
-                "type": "integer",
+                "type": "INTEGER",
                 "tag": "",
                 "description": "",
                 "required": false
             },
             "creator": {
-                "type": "object",
+                "type": "OBJECT",
                 "tag": "",
                 "description": "",
                 "required": false,
                 "attrs": {
                     "id": {
-                        "type": "string",
+                        "type": "STRING",
                         "tag": "",
                         "description": "",
                         "required": false
                     },
                     "nickname": {
-                        "type": "string",
+                        "type": "STRING",
                         "tag": "",
                         "description": "",
                         "required": false
                     },
                     "title": {
-                        "type": "string",
+                        "type": "STRING",
                         "tag": "",
                         "description": "",
                         "required": false
                     },
                     "accountType": {
-                        "type": "string",
+                        "type": "STRING",
                         "tag": "",
                         "description": "",
                         "required": false
                     },
                     "countryCode": {
-                        "type": "string",
+                        "type": "STRING",
                         "tag": "",
                         "description": "",
                         "required": false
                     },
                     "orientation": {
-                        "type": "string",
+                        "type": "STRING",
                         "tag": "",
                         "description": "",
                         "required": false
@@ -156,50 +156,50 @@
                 }
             },
             "participants": {
-                "type": "array",
+                "type": "ARRAY",
                 "tag": "",
                 "description": "",
                 "required": false,
                 "attrs": [
                     {
                         "user": {
-                            "type": "object",
+                            "type": "OBJECT",
                             "tag": "",
                             "description": "",
                             "required": false,
                             "attrs": {
                                 "id": {
-                                    "type": "string",
+                                    "type": "STRING",
                                     "tag": "",
                                     "description": "",
                                     "required": false
                                 },
                                 "nickname": {
-                                    "type": "string",
+                                    "type": "STRING",
                                     "tag": "",
                                     "description": "",
                                     "required": false
                                 },
                                 "title": {
-                                    "type": "string",
+                                    "type": "STRING",
                                     "tag": "",
                                     "description": "",
                                     "required": false
                                 },
                                 "accountType": {
-                                    "type": "string",
+                                    "type": "STRING",
                                     "tag": "",
                                     "description": "",
                                     "required": false
                                 },
                                 "countryCode": {
-                                    "type": "string",
+                                    "type": "STRING",
                                     "tag": "",
                                     "description": "",
                                     "required": false
                                 },
                                 "orientation": {
-                                    "type": "string",
+                                    "type": "STRING",
                                     "tag": "",
                                     "description": "",
                                     "required": false
@@ -207,25 +207,25 @@
                             }
                         },
                         "creator": {
-                            "type": "boolean",
+                            "type": "BOOLEAN",
                             "tag": "",
                             "description": "",
                             "required": false
                         },
                         "ranking": {
-                            "type": "integer",
+                            "type": "INTEGER",
                             "tag": "",
                             "description": "",
                             "required": false
                         },
                         "numberOfTrades": {
-                            "type": "integer",
+                            "type": "INTEGER",
                             "tag": "",
                             "description": "",
                             "required": false
                         },
                         "performance": {
-                            "type": "string",
+                            "type": "STRING",
                             "tag": "",
                             "description": "",
                             "required": false
@@ -236,43 +236,43 @@
         }
     },
     "joiner": {
-        "type": "object",
+        "type": "OBJECT",
         "tag": "",
         "description": "",
         "required": false,
         "attrs": {
             "id": {
-                "type": "string",
+                "type": "STRING",
                 "tag": "",
                 "description": "",
                 "required": false
             },
             "nickname": {
-                "type": "string",
+                "type": "STRING",
                 "tag": "",
                 "description": "",
                 "required": false
             },
             "title": {
-                "type": "string",
+                "type": "STRING",
                 "tag": "",
                 "description": "",
                 "required": false
             },
             "accountType": {
-                "type": "string",
+                "type": "STRING",
                 "tag": "",
                 "description": "",
                 "required": false
             },
             "countryCode": {
-                "type": "string",
+                "type": "STRING",
                 "tag": "",
                 "description": "",
                 "required": false
             },
             "orientation": {
-                "type": "string",
+                "type": "STRING",
                 "tag": "",
                 "description": "",
                 "required": false
@@ -280,7 +280,7 @@
         }
     },
     "participantIds": {
-        "type": "enum",
+        "type": "ENUM",
         "tag": "",
         "description": "",
         "required": false
