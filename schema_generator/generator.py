@@ -1,9 +1,7 @@
 import json
-import logging
 from typing import Any, Optional, Union
-from schema_generator.types import SchemaDataType, TYPE_MAPPING
+from .types import SchemaDataType, TYPE_MAPPING
 
-LOGGER = logging.getLogger(__name__)
 
 class SchemaGenerator:
     """Generates a schema description of a json object
@@ -20,12 +18,12 @@ class SchemaGenerator:
         Generates a schema description of the input data.
         Write schema description to output file
         """
-        LOGGER.info("Generating schema from input file", self.input_file_path)
+        print(f"Generating schema from input file {self.input_file_path}")
         self._read_input_file()
         self._validate_input_data()
         self._generate_schema()
         self._write_schema_to_output_file()
-        LOGGER.info("Schema generated and written to output file", self.output_file_path)
+        print(f"Schema generated and written to output file {self.output_file_path}")
     
     def _read_input_file(self) -> Union[list, dict]:
         """
