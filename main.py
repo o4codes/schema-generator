@@ -2,7 +2,7 @@
 Main file to utilize the schema generator
 """
 
-from executors.schema_generator import SchemaGenerator
+from schema_generator import SchemaGenerator
 
 input_file_one = "data/data_1.json"
 input_file_two = "data/data_2.json"
